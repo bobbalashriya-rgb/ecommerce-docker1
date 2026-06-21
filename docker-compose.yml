@@ -4,9 +4,9 @@ services:
     image: postgres:15-alpine
     container_name: ecommerce-db
     environment:
-      POSTGRES_DB: shriya12
+      POSTGRES_DB: postgres
       POSTGRES_USER: shriya12
-      POSTGRES_PASSWORD: shriya@123
+      POSTGRES_PASSWORD: shriya123
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -40,9 +40,9 @@ services:
       - "5000:5000"
     environment:
       DB_HOST: postgres
-      DB_NAME: ${DB_NAME:-ecommerce}
-      DB_USER: ${DB_USER:-postgres}
-      DB_PASSWORD: ${DB_PASSWORD:-postgres}
+      DB_NAME: shriya12
+      DB_USER: shriya12
+      DB_PASSWORD: shriya123
       REDIS_HOST: redis
       REDIS_PORT: 6379
     depends_on:
