@@ -22,7 +22,7 @@ def get_db_connection():
 @api.route('/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
-    return jsonify({'status': 'healthy', 'service': 'backend'}), 200
+    return jsonify({'status': 'healthy', 'service': 'backend'})
 
 @api.route('/products', methods=['GET'])
 def get_products():
