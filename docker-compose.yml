@@ -4,9 +4,9 @@ services:
     image: postgres:15-alpine
     container_name: ecommerce-db
     environment:
-      POSTGRES_DB: admin
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: shriya12
+      POSTGRES_USER: shriya12
+      POSTGRES_PASSWORD: shriya@123
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
