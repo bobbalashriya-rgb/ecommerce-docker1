@@ -22,7 +22,7 @@ def get_db_connection():
 @api.route('/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
-    return jsonify({'status': 'healthy', 'service': 'backend'})
+    return jsonify({'status': 'healthy', 'service': 'backend'}),200
 
 @api.route('/products', methods=['GET'])
 def get_products():
@@ -180,7 +180,7 @@ def delete_product(product_id):
     cache.invalidate_products_cache()
 
     return jsonify({'message': 'Product deleted successfully'}), 200
-EOFcat > backend/app/routes.py << 'EOF'
+#EOFcat > backend/app/routes.py << 'EOF'
 """
 API routes for product management
 """
