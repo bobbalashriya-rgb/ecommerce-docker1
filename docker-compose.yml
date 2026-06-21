@@ -39,8 +39,8 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DB_HOST: "postgres.c67mucqg2eyj.us-east-1.rds.amazonaws.com"
-      DB_NAME: shriya12
+      DB_HOST: postgres
+      DB_NAME: postgres
       DB_USER: shriya12
       DB_PASSWORD: shriya123
       REDIS_HOST: redis
