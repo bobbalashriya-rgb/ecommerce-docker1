@@ -180,7 +180,7 @@ def delete_product(product_id):
     cache.invalidate_products_cache()
 
     return jsonify({'message': 'Product deleted successfully'}), 200
-#EOFcat > backend/app/routes.py << 'EOF'
+     
 """
 API routes for product management
 """
