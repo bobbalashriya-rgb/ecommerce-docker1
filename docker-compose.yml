@@ -60,7 +60,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        REACT_APP_API_URL: http://54.90.101.233:5000/api
+        REACT_APP_API_URL: http://localhost:5000/api
     container_name: ecommerce-frontend
     ports:
       - "3000:3000"
